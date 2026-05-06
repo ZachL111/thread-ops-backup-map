@@ -1,0 +1,28 @@
+{
+  "repo": "thread-ops-backup-map",
+  "language": "JavaScript",
+  "category": "Automation",
+  "goal": "Develop a JavaScript command-oriented project for backup scenarios with framed sample traffic, bounds and ordering tests, and fixture-scale datasets.",
+  "weights": {
+    "signal": 3,
+    "slack": 1,
+    "confidence": 2,
+    "drag": 5
+  },
+  "thresholds": {
+    "ship": 156,
+    "watch": 113
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}
